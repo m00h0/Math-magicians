@@ -40,7 +40,7 @@
     <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
     <li><a href="#">JAVASCRIPT</a></li>
-    <li><a href="#">JAVASCRIPT</a></li>
+    <li><a href="#">REACT</a></li>
   </ul>
 </details>
 
@@ -52,13 +52,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [Live Demo Link](#)
+- [Live Demo Link](Will Coming Soon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Walkthrough <a name="walkthrough"></a>
 
-- [Zoom Video](#)
+- [Zoom Video](Will Coming Soon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,13 +85,16 @@ Install this project with:
 
 Node.js.
 
+npx create-react-app my-app
+
 ### Usage
 
 To run the project, execute the following command: 
 
 
-npm install --save-dev hint@7.x
+npm install 
 
+npx create-react-app my-app
 
 
 ### Run tests
