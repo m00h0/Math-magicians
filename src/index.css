@@ -25,3 +25,51 @@ code {
     'Courier New',
     monospace;
 }
+
+.outer-container {
+  border: 2px solid #b3b4b8;
+  width: 324px;
+  height: 302px;
+  margin: 250px auto 200px auto;
+  border-radius: 4px;
+}
+
+.inner-container {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-weight: bolder;
+  height: 50px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #5e5e68;
+}
+
+.btn {
+  width: 81px;
+  height: 50px;
+  font-weight: 700;
+}
+
+.btn-color {
+  background-color: rgb(219, 126, 39);
+  border-bottom: none;
+  border-right: none;
+  font-weight: 700;
+  border-top: 1px solid #fff;
+}
+
+.btn-color:hover {
+  background-color: rgb(212, 121, 36);
+  border-bottom: none;
+  border-right: none;
+  font-weight: 700;
+  border-top: 1px solid #fff;
+}
+
+.zero {
+  width: 162px;
+  height: 50px;
+  font-weight: 700;
+}
