@@ -1,45 +1,50 @@
-export default function Calculator() {
+import { React, useState } from 'react';
+import PropTypes from 'prop-types';
+
+import calculate from '../logic/calculate';
+import BoardElm from './BorderElm';
+
+function Interface({ showValue }) {
   return (
-    <div className="outer-container">
-      <div className="inner-container">
-        <p>0</p>
-      </div>
-      <BorderElm />
+    <div className="inner-container">
+      <p>{showValue}</p>
     </div>
   );
 }
 
-function BorderElm() {
+Interface.propTypes = {
+  showValue: PropTypes.string,
+};
+
+Interface.defaultProps = {
+  showValue: '0',
+};
+
+export default function Calculator() {
+  const [showValue, setShowValue] = useState('0');
+  const [infoCalculate, setInfoCalculate] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const hanndleBoardClick = (buttonName) => {
+    const newInfo = calculate(infoCalculate, buttonName);
+    setInfoCalculate(newInfo);
+
+    if (newInfo.next !== null) {
+      setShowValue(newInfo.next);
+    } else if (newInfo.total !== null) {
+      setShowValue(newInfo.total);
+    } else {
+      setShowValue('0');
+    }
+  };
+
   return (
-    <div className="container">
-      <button className="btn" type="submit" name="AC">AC</button>
-      <button className="btn" type="submit" name="+/-">+/-</button>
-      <button className="btn" type="submit" name="%">%</button>
-      <button className="btn btn-color" type="submit" name="/">/</button>
-      <br />
-
-      <button className="btn" type="submit" name="7">7</button>
-      <button className="btn" type="submit" name="8">8</button>
-      <button className="btn" type="submit" name="9">9</button>
-      <button className="btn btn-color" type="submit" name="*">*</button>
-      <br />
-
-      <button className="btn" type="submit" name="4">4</button>
-      <button className="btn" type="submit" name="5">5</button>
-      <button className="btn" type="submit" name="6">6</button>
-      <button className="btn btn-color" type="submit" name="-">-</button>
-      <br />
-
-      <button className="btn" type="submit" name="1">1</button>
-      <button className="btn" type="submit" name="2">2</button>
-      <button className="btn" type="submit" name="3">3</button>
-      <button className="btn btn-color" type="submit" name="+">+</button>
-      <br />
-
-      <button className="zero" type="submit" name="0">0</button>
-      <button className="btn" type="submit" name=".">.</button>
-      <button className="btn btn-color" type="submit" name="=">=</button>
-      <br />
+    <div className="Outer-Container">
+      <Interface showValue={showValue} />
+      <BoardElm onClickButton={hanndleBoardClick} />
     </div>
   );
 }
