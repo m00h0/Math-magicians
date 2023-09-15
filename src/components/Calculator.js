@@ -42,9 +42,11 @@ export default function Calculator() {
   };
 
   return (
-    <div className="Outer-Container">
-      <Interface showValue={showValue} />
-      <BoardElm onClickButton={hanndleBoardClick} />
-    </div>
+    <>
+      <div className="Outer-Container">
+        <Interface showValue={showValue} />
+        <BoardElm onClickButton={hanndleBoardClick} />
+      </div>
+    </>
   );
 }

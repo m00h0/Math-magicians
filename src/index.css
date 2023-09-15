@@ -78,3 +78,23 @@ code {
   height: 50px;
   font-weight: 700;
 }
+
+.api-quote {
+  font-size: larger;
+  color: #fff;
+  text-align: center;
+}
+
+.quote-container {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(212, 121, 36);
+  border: solid 2px rgb(54, 103, 131);
+}
+
+.api-quote,
+.quote-container:hover {
+  background-color: rgb(212, 101, 36);
+  border: solid 2px rgb(54, 103, 131);
+  color: #000;
+}
