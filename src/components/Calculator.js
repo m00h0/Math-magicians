@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import calculate from '../logic/calculate';
 import BoardElm from './BorderElm';
+import ShowNinjaQuotes from './ShowNinjaQuotes';
 
 function Interface({ showValue }) {
   return (
@@ -42,9 +43,12 @@ export default function Calculator() {
   };
 
   return (
-    <div className="Outer-Container">
-      <Interface showValue={showValue} />
-      <BoardElm onClickButton={hanndleBoardClick} />
-    </div>
+    <>
+      <ShowNinjaQuotes />
+      <div className="Outer-Container">
+        <Interface showValue={showValue} />
+        <BoardElm onClickButton={hanndleBoardClick} />
+      </div>
+    </>
   );
 }
