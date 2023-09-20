@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useEffect, useState } from 'react';
 
 export default function ShowNinjaQuotes() {
@@ -10,12 +12,14 @@ export default function ShowNinjaQuotes() {
       setLoading(true);
 
       try {
-        const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=computers',
+        const res = await fetch(
+          'https://api.api-ninjas.com/v1/quotes?category=computers',
           {
             headers: {
               'X-Api-Key': 'GsMN2lfNs1u9olrdYxzTGQ==VcYNEChUf4GvAyRQ',
             },
-          });
+          },
+        );
         if (res.ok) {
           const result = await res.json();
           setInfo(result);
@@ -32,15 +36,24 @@ export default function ShowNinjaQuotes() {
 
   return (
     <div className="quote-container">
-      { error ? 'Failed to fetch quote' : null }
-      {loading
-        ? (<p className="load-signal">Loading... </p>) : (
-          <p className="Api-quote">
-            {info.map((item) => (
-              item.quote
-            ))}
-          </p>
-        )}
+      {error ? 'Failed to fetch quote' : null}
+      {loading ? (
+        <p className="load-signal">Loading... </p>
+      ) : (
+        <div>
+          {info.map((item) => (
+            <Quote key={item.id} quote={item.quote} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
+
+// Create a separate Quote component
+function Quote({ quote }) {
+  return <p className="Api-quote">{quote}</p>;
+}
+Quote.propTypes = {
+  quote: PropTypes.string.isRequired,
+};
