@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-export default function BoardElm({ onClickButton }) {
+export default function BoardFeature({ onClickButton }) {
   const clickHandle = (e) => onClickButton(e.target.name);
   return (
-    <div className="outer-container">
+    <div className="button">
       <button type="submit" className="btn" name="AC" onClick={clickHandle}>AC</button>
       <button type="submit" className="btn" name="+/-" onClick={clickHandle}>+/-</button>
       <button type="submit" className="btn" name="%" onClick={clickHandle}>%</button>
@@ -30,6 +30,6 @@ export default function BoardElm({ onClickButton }) {
     </div>
   );
 }
-BoardElm.propTypes = {
+BoardFeature.propTypes = {
   onClickButton: PropTypes.func.isRequired,
 };

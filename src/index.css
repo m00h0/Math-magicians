@@ -29,16 +29,12 @@ code {
 .outer-container {
   border: 2px solid #b3b4b8;
   width: 324px;
-  height: 250px;
-  margin: 40px auto 350px auto;
+  height: 300px;
+  margin: 40px 100px auto 1100px;
   border-radius: 4px;
-  margin-bottom: 10%;
 }
 
 .inner-container {
-  position: relative;
-  left: 796px;
-  top: 40px;
   padding: 5px;
   display: flex;
   justify-content: flex-end;
