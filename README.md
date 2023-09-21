@@ -52,7 +52,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [Live Demo Link](Will Coming Soon)
+- [Live Demo Link](https://math-magicians-website-tlbk.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
