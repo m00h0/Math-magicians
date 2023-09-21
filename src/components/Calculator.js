@@ -2,7 +2,6 @@ import { React, useState } from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 import BoardFeature from './BoardFeature';
-// import ShowNinjaQuotes from './ShowNinjaQuotes';
 
 function Interface({ showValue }) {
   return (
