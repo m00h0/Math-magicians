@@ -31,7 +31,7 @@
 
 **[Math-magicians]** Math-magicians Website.
 
-## 🛠 Built With <a name="Html&Css&js&React"></a>
+## 🛠 Built With <a name="built-witht"></a>
 
 
 <details>
