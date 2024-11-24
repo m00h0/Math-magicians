@@ -94,8 +94,6 @@ To run the project, execute the following command:
 
 npm install 
 
-npx create-react-app my-app
-
 
 ### Run tests
 
