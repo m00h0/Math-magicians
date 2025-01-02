@@ -24,7 +24,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Math-magicians] <a name="Math-magicians"></a>
+# 📖 [Math-magicians] <a name="about-project"></a>
 
 
 
