@@ -28,7 +28,7 @@
 
 
 
-**[Math-magicians]** Math-magicians Website.
+**Math-magicians:** Math-magicians Website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
