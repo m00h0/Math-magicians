@@ -58,7 +58,7 @@
 
 ## Walkthrough <a name="walkthrough"></a>
 
-- [Zoom Video] (Will Coming Soon)
+-  (Will Coming Soon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
