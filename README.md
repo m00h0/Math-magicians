@@ -47,7 +47,7 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **[Math-magicians]**
+- **(Math-magicians)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
