@@ -122,7 +122,7 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **( Website will able to perform all math operations)**
+- [ ] **( Website will able to perform all math operations.)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
